@@ -3,17 +3,20 @@
  */
 
 import React from 'react';
-
-import Timestamp from './Timestamp';
+import ReactDOM from 'react-dom';
 
 const App = () => {
   return (
     <div>
-      <h1>Hello World!</h1>
-
-      <Timestamp />
+      <h1>Hello JIMINN's World!</h1>
     </div>
   );
 };
 
-export default App;
+const renderApp = (selector) => {
+  document.querySelectorAll(selector).forEach((el) => {
+    ReactDOM.render(<App {...el.dataset} />, el);
+  });
+};
+
+export default renderApp

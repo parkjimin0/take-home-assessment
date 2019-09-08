@@ -4,21 +4,19 @@
 
 import '@babel/polyfill';
 
-import React from 'react';
-import ReactDom from 'react-dom';
-
 // Include the main scss file for webpack processing.
 import '../css/app.scss';
 
-import App from './components/App';
+import { renderApp, renderTime } from './components';
+
 import getLogger from './utils/logger';
 
 const log = getLogger('App');
 
 const init = () => {
   log.info('init() :: App starts booting...');
-
-  ReactDom.render(<App />, document.getElementById('app'));
+  renderTime('#time')
+  renderApp('#app')
 };
 
 // init app

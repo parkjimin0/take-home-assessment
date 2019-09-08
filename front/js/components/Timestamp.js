@@ -3,6 +3,7 @@
  */
 
 import React, { useEffect } from 'react';
+import ReactDOM from 'react-dom';
 
 import useTimestampProvider from '../hooks/use-timestamp-provider';
 
@@ -23,4 +24,10 @@ const Timestamp = () => {
   );
 };
 
-export default Timestamp;
+const renderTime = (selector) => {
+  document.querySelectorAll(selector).forEach((el) => {
+    ReactDOM.render(<Timestamp {...el.dataset} />, el);
+  });
+};
+
+export default renderTime;
