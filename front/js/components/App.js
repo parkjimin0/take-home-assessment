@@ -8,7 +8,7 @@ import ReactDOM from 'react-dom';
 const App = () => {
   return (
     <div>
-      <h1>Hello JIMINN's World!</h1>
+      <h1>Hello JIMINN's World to Take home Assessment!</h1>
     </div>
   );
 };
