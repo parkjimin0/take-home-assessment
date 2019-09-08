@@ -5,4 +5,8 @@ class HomeController < ApplicationController
   def timestamp
     render json: {timestamp: Time.now.to_i}
   end
+
+  def time
+    render 'time'
+  end
 end

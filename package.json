@@ -26,11 +26,13 @@
     "@babel/polyfill": "^7.4.4",
     "axios": "^0.19.0",
     "fibers": "^4.0.1",
+    "history": "^4.9.0",
     "loglevel": "^1.6.3",
     "loglevel-plugin-prefix": "^0.8.4",
     "prop-types": "^15.7.2",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
+    "react-router-dom": "^5.0.1",
     "sass": "^1.22.10"
   },
   "devDependencies": {
